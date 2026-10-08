@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="../styles/firstpagestyles.css" />
+    <link rel="stylesheet" href="../styles/oform.css" />
+  </head>
+  <body>
+
+    
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo" title="LOGO">
+          <img
+            srcset="../Images/BBTLogo.png"
+            class="media1"
+            width="90"
+            height="90"
+            border-radius="10px"
+          />
+        </a>
+
+        
+        <div class="nav-link-list">
+          <a class="a-about" title="ABOUT" href="./about.html">
+            ABOUT
+            <span class="tooltip-text"> Click here to go to another page</span>
+          </a>
+          <a href="form.html">GET INVOLVED</a>
+          <a href="./reviews2.html">REVIEWS</a>
+          <a href="./References.html">REFERENCES</a>
+        </div>
+
+        <div class="burger-wrap">
+          <img src="../Images/burger.png" class="burger-img"/>
+
+          <div class="dropdown">
+            <a class="a-about" title="ABOUT" href="./about.html">
+              ABOUT
+              <span class="tooltip-text"> Click here to go to another page</span>
+            </a>
+            <a href="form.html">GET INVOLVED</a>
+            <a href="./reviews2.html">REVIEWS</a>
+            <a href="./References.html">REFERENCES</a>
+          </div>
+        </div>
+
+      </nav>
+
+      <div>
+        <article class="writeup">
+      <section class="getinvolvedflex">
+        <h1>GET INVOLVED</h1>
+        <p>
+          "Becoming a student or tutor with Big Buddy Tutoring Program means
+           joining a supportive community built on learning, growth, and 
+           connection. Students receive personalized academic support and 
+           encouragement in a safe, welcoming environment, helping them 
+           build confidence and succeed in school. Tutors gain valuable 
+           leadership experience by mentoring younger learners, 
+           strengthening their own skills, and giving back to their 
+           community. Whether you are seeking extra support or looking to 
+           make a positive impact, Big Buddy offers an opportunity to grow, 
+           connect, and succeed together. "
+        </p>
+
+      </div>
+    <div class="form-wrapper">
+      <h1 class="form-title">Become a Tutor</h1>
+      <form class="form-el" id="contact-form" action="" method="post">
+        <div class="">
+          <input type="checkbox" id="contact" name="contact" value="contact" />
+          <label for="contact"> I consent to a criminal record check</label>
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="fName">First Name</label>
+          <input class="form-input" name="fName" type="text" required />
+        </div>
+        <div class="input-wrapper">
+          <label class="form-input-label" for="lName">Last Name</label>
+          <input class="form-input" name="lName" type="text" required />
+        </div>
+        <div class="input-wrapper">
+          <label class="form-input-label" for="street">Street</label>
+          <input class="form-input" name="street" type="text" required />
+        </div>
+        <div class="input-wrapper">
+          <label class="form-input-label" for="city">City</label>
+          <input class="form-input" name="city" type="text" required />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="province">Province</label>
+          <input class="form-input" name="Province" type="text" required />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="poscode">Postal Code</label>
+          <input
+            class="form-input"
+            pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+            name="poscode"
+            placeholder="A1A 1A1"
+            type="text"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="phone">Phone</label>
+          <input
+            class="form-input"
+            name="phone"
+            type="text"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="XXX-XXX-XXXX"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="student" class="form-input-label">Current Grade</label>
+          <select name="student" class="form-input">
+            <option value="eight">8</option>
+            <option value="nine">9</option>
+            <option value="ten">10</option>
+            <option value="eleven">11</option>
+            <option value="twelve">12</option>
+          </select>
+        </div>
+
+        <div class="">
+          <input type="checkbox" id="contact" name="contact" value="contact" />
+          <label for="contact"> Parental consent</label>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="parent" class="form-input-label">Parent</label>
+          <select name="parent" class="form-input">
+            <option value="mother">Mother</option>
+            <option value="father">Father</option>
+            <option value="guardian">Guardian</option>
+          </select>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="comment" class="form-input-label"
+            >Please write a brief description why you want to become a Big Buddy
+            Tutor. <br />
+            As well, please email a copy of your most recent transcipts <br />
+            and at least two letter of recommendation to
+            bigbuddytutoring@gmail.com</label
+          >
+          <textarea
+            class="form-input"
+            id="comment"
+            rows="10"
+            cols="10"
+            name="comment"
+            placeholder="Start typing here...."
+          ></textarea>
+        </div>
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </div>
+
+    <div class="form-wrapper">
+      <h1 class="form-title">Refer a Student</h1>
+      <form class="form-el" id="contact-form" action="" method="post">
+        <div class="">
+          <input type="checkbox" id="contact" name="contact" value="contact" />
+          <label for="contact"> Contact Parent/Guardian</label>
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="fName">Student First Name</label>
+          <input class="form-input" name="fName" type="text" required />
+        </div>
+        <div class="input-wrapper">
+          <label class="form-input-label" for="lName">Student Last Name</label>
+          <input class="form-input" name="lName" type="text" required />
+        </div>
+        <div class="input-wrapper">
+          <label class="form-input-label" for="street">School</label>
+          <input class="form-input" name="street" type="text" required />
+        </div>
+        <div class="input-wrapper">
+          <label class="form-input-label" for="city">City</label>
+          <input class="form-input" name="city" type="text" required />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="province">Province</label>
+          <input class="form-input" name="Province" type="text" required />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="poscode">Postal Code</label>
+          <input
+            class="form-input"
+            pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+            name="poscode"
+            placeholder="A1A 1A1"
+            type="text"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label class="form-input-label" for="phone"
+            >Parent/Guardian Phone</label
+          >
+          <input
+            class="form-input"
+            name="phone"
+            type="text"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="XXX-XXX-XXXX"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="student" class="form-input-label">Student</label>
+          <select name="student" class="form-input">
+            <option value="elementery">Elementery</option>
+            <option value="secondary">Secondary</option>
+            <option value="uni">Uni</option>
+          </select>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="parent" class="form-input-label">Parent</label>
+          <select name="parent" class="form-input">
+            <option value="mother">Mother</option>
+            <option value="father">Father</option>
+            <option value="guardian">Guardian</option>
+          </select>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="dancers" class="form-input-label">Grade</label>
+          <select name="dancers" class="form-input">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+          </select>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="comment" class="form-input-label"
+            >Please detail why this student is being referred</label
+          >
+          <textarea
+            class="form-input"
+            id="comment"
+            rows="10"
+            cols="10"
+            name="comment"
+            placeholder="Enter information here...."
+          ></textarea>
+        </div>
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </div>
+    <footer>
+      <p>Author: Simone Urie</p>
+      <p> Updated: Jan 2026</p>
+    </footer>
+  </body>
+</html>

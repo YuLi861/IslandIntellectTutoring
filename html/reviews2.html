@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveiws 2</title>
+    <link rel="stylesheet" href="../styles/rev2.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="nav-bar">
+        <a href="../index.html" class="logo" title="LOGO">
+          <img
+            srcset="../Images/BBTLogo.png"
+            class="media1"
+            width="90"
+            height="90"
+            border-radius="10px"
+          />
+        </a>
+
+        <div class="nav-link-list">
+          <a class="a-about" title="ABOUT" href="./about.html">
+            ABOUT
+            <span class="tooltip-text"> Click here to go to another page</span>
+          </a>
+          <a href="./about.html">GET INVOLVED</a>
+          <a href="./reviews2.html">REVIEWS</a>
+          <a href="./References.html">REFERENCES</a>
+        </div>
+
+        <div class="burger-wrap">
+          <img src="../Images/burger.png" class="burger-img" />
+          <div class="dropdown">
+            <a class="a-about" title="ABOUT" href="./about.html">
+              ABOUT
+              <span class="tooltip-text">
+                Click here to go to another page</span
+              >
+            </a>
+            <a href="form.html">GET INVOLVED</a>
+            <a href="./reviews.html">REVIEWS</a>
+            <a href="./References.html">REFERENCES</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="revpic">
+        <img
+          src="../Images/stills_279106_ochreochre.png"
+          alt="person holding books"
+          style="width: 80%"
+        />
+      </div>
+
+      <div class="reviewsc">
+        <h1>If You Have Worked With Us Please Leave a Review</h1>
+        <p>Fill out the form below and leave a comment/review</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form class="form-el" id="review-form">
+          <div class="input-wrapper">
+            <label class="form-input-label" for="name">Name</label>
+            <input class="form-input" name="name" type="text" id="name" />
+            <span id="name-error"></span>
+          </div>
+
+          <div class="input-wrapper">
+            <label class="form-input-label" for="comment">Comment</label>
+            <input class="form-input" name="comment" type="text" id="comment" />
+            <span id="comment-error"></span>
+          </div>
+
+          <div class="input-wrapper">
+            <label class="form-input-label" for="rating"
+              >Rating 1-5 of Our Website and Service</label
+            >
+            <input class="form-input" name="street" type="text" id="rating" />
+            <span id="rating-error"></span>
+          </div>
+          <input type="submit" />
+        </form>
+      </div>
+
+      <script src="review.js"></script>
+    </div>
+
+    <div class="footer">Simone Urie Feb 2026</div>
+  </body>
+</html>
